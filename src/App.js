@@ -5,6 +5,7 @@
 import { Card } from "./components/cards/card.js";
 
 const App =() => {
+    const wishes ="hii anil"
     return (
         <div>
             {/* <h1>Hello World</h1>
@@ -12,8 +13,11 @@ const App =() => {
         <ImageComponent></ImageComponent>
         <Heading1></Heading1>
          <ListParentOrdered></ListParentOrdered> */}
-        <Card></Card>
-        <Card></Card>
+         <h3>{wishes}</h3>
+         {[1].map((num,index)=>(<Card key={index}></Card>))}
+         {/* {false ? <Card></Card> : null} */}
+         {/* {true ? <Card></Card> : null} */}
+        
         </div>
     );
 }
